@@ -21,6 +21,7 @@ const categoryDropDown = (data) => {
 };
 
 const buildOptions = (data) => {
+    optionContainer.innerHTML = ""
     data.forEach(element => {
         console.log(element)
         optionContainer.innerHTML += categoryDropDown(element);

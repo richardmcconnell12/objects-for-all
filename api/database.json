@@ -39,6 +39,21 @@
       "name": "Paint Brush",
       "categoryId": 2,
       "id": 8
+    },
+    {
+      "name": "Brenda's magical paint ",
+      "categoryId": 3,
+      "id": 9
+    },
+    {
+      "name": "AAA",
+      "categoryId": 8,
+      "id": 10
+    },
+    {
+      "name": "Double A",
+      "categoryId": 8,
+      "id": 11
     }
   ],
   "category": [
@@ -65,6 +80,18 @@
     {
       "name": "Colored Pencils",
       "id": 6
+    },
+    {
+      "name": "Brenda's Stuff",
+      "id": 7
+    },
+    {
+      "name": "Batteries",
+      "id": 8
+    },
+    {
+      "name": "Ricky's Stuff",
+      "id": 9
     }
   ],
   "order": [

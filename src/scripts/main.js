@@ -34,6 +34,10 @@ document.querySelector("#btn-saveCategory").addEventListener("click", event => {
     API.saveCategory(categoryObj)
         .then(parsedResult => {
             console.log("what is the result", parsedResult);
+            API.getCategories()
+                .then(results => {
+                    buildOptions(results)
+                })
         });
 
 });
@@ -53,6 +57,11 @@ document.querySelector("#btn-saveInput").addEventListener("click", event => {
             console.log("What's the new junk", result)
         })
 });
+
+API.getCategories()
+    .then(results => {
+        buildOptions(results)
+    })
 
 API.getCategories()
     .then(results => {

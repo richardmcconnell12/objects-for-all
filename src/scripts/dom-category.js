@@ -12,6 +12,21 @@ const categoryDetailDom = (obj) => {
             </div>`;
 };
 
+document.querySelector("#junk__category");
+
+const categoryDropDown = (data) => {
+    let options = `<option value="${data.id}>${data.name}</option>`
+    console.log(options)
+    return `<option value="${data.id}">${data.name}</option>`
+};
+
+const buildOptions = (data) => {
+    data.forEach(element => {
+        console.log(element)
+        optionContainer.innerHTML += categoryDropDown(element);
+    })
+}
+
 const buildCategoryDom = (data) => {
     mainContainer.innerHTML = "";
     data.forEach(element => {
